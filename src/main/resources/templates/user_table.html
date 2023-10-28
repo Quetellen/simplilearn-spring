@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>User Table Example</title>
+</head>
+
+<body>
+	<h1><b>HTML Table Thymeleaf Example</b></h1>
+	<br>
+	<table border="1">
+		<tr>
+			<th>Field Name</th>
+			<th>Value</th>
+		</tr>
+		<tr>
+			<th>First Name</th>
+			<th th:text="${firstname}"></th>
+		</tr>
+		<tr>
+			<th>Last Name</th>
+			<th th:text="${lastname}"></th>
+		</tr>
+		<tr>
+			<th>Email</th>
+			<th th:text="${email}"></th>
+		</tr>
+		<tr>
+			<th>Birth</th>
+			<th th:text="${birth}"></th>
+		</tr>
+	</table>
+	<br>
+	<a th:href="@{/user/form}">Try Again</a>
+</body>
+
+</html>
