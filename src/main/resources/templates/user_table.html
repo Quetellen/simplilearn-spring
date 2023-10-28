@@ -2,33 +2,33 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<meta charset="ISO-8859-1">
-	<title>User Table Example</title>
+	<meta charset="UTF-8">
+	<title>User Table</title>
 </head>
 
 <body>
-	<h1><b>HTML Table Thymeleaf Example</b></h1>
+	<h1>HTML Table Thymeleaf Example</h1>
 	<br>
-	<table border="1">
+	<table border='1'>
 		<tr>
 			<th>Field Name</th>
 			<th>Value</th>
 		</tr>
 		<tr>
-			<th>First Name</th>
-			<th th:text="${firstname}"></th>
+			<td>First Name</td>
+			<td th:text="${firstname}"></td>
 		</tr>
 		<tr>
-			<th>Last Name</th>
-			<th th:text="${lastname}"></th>
+			<td>Last Name</td>
+			<td th:text="${lastname}"></td>
 		</tr>
 		<tr>
-			<th>Email</th>
-			<th th:text="${email}"></th>
+			<td>Email</td>
+			<td th:text="${email}"></td>
 		</tr>
 		<tr>
-			<th>Birth</th>
-			<th th:text="${birth}"></th>
+			<td>Birth</td>
+			<td th:text="${birth}"></td>
 		</tr>
 	</table>
 	<br>
